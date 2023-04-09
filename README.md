@@ -1,19 +1,21 @@
-# xss_vuln_finder.sh
-This Bash script is designed to test for XSS (Cross-Site Scripting) vulnerabilities.
+# Introduction
 
+This is a bash script that checks for an XSS vulnerability in a target URL. The script sends an HTTP request with an XSS payload and checks if the response contains the payload. If the payload is found, the script reports that an XSS vulnerability has been found.
 
-# XSS Vulnerability Checker
+# How to Use
 
-This bash script can be used to check for Cross-Site Scripting (XSS) vulnerabilities in a given URL. It sends an HTTP request with an XSS payload and checks if the response contains the payload.
+Open the script in a text editor.
+Set the target_url variable to the URL of the target website.
+Set the xss_payload variable to the XSS payload to be tested.
+Save the script.
+Open a terminal and navigate to the directory containing the script.
+Run the script using the command bash scriptname.sh.
+The script will output whether an XSS vulnerability was found in the target URL.
 
-# Usage
-1. Open the script in a text editor of your choice.
-2. Set the target_url variable to the URL you want to check for XSS vulnerabilities.
-3. Run the script in your terminal by executing the following command: bash xss_vuln_checker.sh
+# Dependencies
 
-# Requirements
-'curl' must be installed in your system to make HTTP requests.
+This script requires the curl command-line tool to be installed.
 
-# Disclaimer
+# Conclusion
 
-This script is intended for educational and testing purposes only. Do not use it on any website without prior permission. The author is not responsible for any damages caused by misuse of this script.
+This script provides a quick and easy way to check for an XSS vulnerability in a target URL. The script can be customized to test different XSS payloads and target URLs.
